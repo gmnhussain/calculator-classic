@@ -1,0 +1,3 @@
+# ignore all files, then just look at .js files
+* linguist-vendored
+*.js linguist-vendored=false

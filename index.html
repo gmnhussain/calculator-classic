@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta info -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="G. M. Nazmul Hussain" />
+  <meta name="keywords" content="calculator" />
+
+  <!-- site identity -->
+  <title>Calculator Classic</title>
+  <link rel="shortcut icon" href="img/favicon.png" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <!-- calculator section -->
+  <div class="calculator-section">
+    <!-- logo -->
+    <!-- <a href="" class="logo"><span>CC</span></a> -->
+
+    <!-- main calculator --->
+    <div class="calculator">
+      <!-- calculator screen -->
+      <div class="screen">
+        <div class="screen-mode">
+          <span class="memory-stat"></span>
+          <span class="memory-val"></span>
+        </div>
+        <div class="screen-input">
+          <span class="input-display"></span>
+          <span class="input-indicator">_</span>
+        </div>
+        <div class="screen-output">0</div>
+
+        <span class="power-stat"></span>
+        <div class="screen-off"></div> <!-- enable when power off -->
+      </div>
+
+      <!-- model text -->
+      <div class="model">
+        <span class="model-left">C.L.A.S.S.I.C</span>
+        <span class="model-right">M23</span>
+      </div>
+
+      <!-- top button -->
+      <div class="btn-top">
+        <div class="calc-btn-group">
+          <div class="calc-btn-wrap">
+            <div class="btn-row">
+              <button type="button" class="calc-btn" data-action="mem-c" data-text="" data-func="">
+                <span>MC</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="mem-s" data-text="M+" data-func="">
+                <span>MS</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="mem-r" data-text="" data-func="">
+                <span>MR</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="mem-minus" data-text="M-" data-func="">
+                <span>M-</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="mem-plus" data-text="M+" data-func="">
+                <span>M+</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="power-on" data-text="" data-func="">
+                <span>On</span>
+              </button>
+            </div>
+            <div class="btn-row">
+              <button type="button" class="calc-btn" data-action="square" data-text="" data-func="">
+                <span>a<sup>2</sup></span>
+              </button>
+              <button type="button" class="calc-btn" data-action="qube" data-text="" data-func="">
+                <span>a<sup>3</sup></span>
+              </button>
+              <button type="button" class="calc-btn" data-action="power" data-text="^" data-func="">
+                <span>a<sup>b</sup></span>
+              </button>
+              <button type="button" class="calc-btn" data-action="brac" data-text="(" data-func="(">
+                <span>(</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="brac" data-text=")" data-func=")">
+                <span>)</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="power-off" data-text="" data-func="">
+                <span>OFF</span>
+              </button>
+            </div>
+            <div class="btn-row">
+              <button type="button" class="calc-btn" data-action="factorial" data-text="!" data-func="">
+                <span>n!</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="npr" data-text="P" data-func="">
+                <span>nPr</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="ncr" data-text="C" data-func="">
+                <span>nCr</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="percent" data-text="%" data-func="">
+                <span>%</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="inverse" data-text="" data-func="">
+                <span>1/a</span>
+              </button>
+              <button type="button" class="calc-btn" data-action="sign" data-text="" data-func="">
+                <span>+/-</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom button -->
+      <div class="btn-bottom">
+        <div class="calc-btn-group">
+          <div class="calc-btn-wrap">
+            <div class="btn-row">
+              <button type="button" class="calc-btn btn-red" data-action="all-clear" data-text="" data-func="">
+                <span>AC</span>
+              </button>
+              <button type="button" class="calc-btn btn-orange" data-action="clear" data-text="" data-func="">
+                <span>C</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="del" data-text="" data-func="">
+                <span>&#8594;</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="qube-root" data-text="&#8731;(" data-func="Math.cbrt(">
+                <span>&#8731;</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="root" data-text="&#8730;(" data-func="Math.sqrt(">
+                <span>&#8730;</span>
+              </button>
+            </div>
+
+            <div class="btn-row">
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="7" data-func="7">
+                <span>7</span>
+              </button>
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="8" data-func="8">
+                <span>8</span>
+              </button>
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="9" data-func="9">
+                <span>9</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="multiply" data-text="&#215;" data-func="*">
+                <span>&#215;</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="division" data-text="&#247;" data-func="/">
+                <span>&#247;</span>
+              </button>
+            </div>
+
+            <div class="btn-row">
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="4" data-func="4">
+                <span>4</span>
+              </button>
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="5" data-func="5">
+                <span>5</span>
+              </button>
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="6" data-func="6">
+                <span>6</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="minus" data-text="-" data-func="-">
+                <span>-</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="plus" data-text="+" data-func="+">
+                <span>+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-btn-group">
+          <div class="calc-btn-wrap">
+            <div class="btn-row">
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="1" data-func="1">
+                <span>1</span>
+              </button>
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="2" data-func="2">
+                <span>2</span>
+              </button>
+              <button type="button" class="calc-btn btn-white" data-action="number" data-text="3" data-func="3">
+                <span>3</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="exp" data-text="" data-func="">
+                <span>exp</span>
+              </button>
+            </div>
+            <div class="btn-row">
+              <button type="button" class="calc-btn btn-white" data-action="zero" data-text="0" data-func="0">
+                <span>0</span>
+              </button>
+              <button type="button" class="calc-btn btn-white" data-action="decimal" data-text="." data-func=".">
+                <span>.</span>
+              </button>
+              <button type="button" class="calc-btn btn-gray" data-action="ans" data-text="" data-func="">
+                <span>ans</span>
+              </button>
+            </div>
+          </div>
+          <div class="calc-btn-wrap">
+            <div class="btn-row">
+              <button type="button" class="calc-btn btn-blue" data-action="equal" data-text="" data-func="">
+                <span>=</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- brand text -->
+      <div class="brand">Made by <span>Nazmul</span></div>
+    </div>
+  </div>
+
+  <!-- js library and custom js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
